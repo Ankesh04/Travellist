@@ -22,3 +22,14 @@ for creating the main js file
 
 1. nodemon app.js
 to start the express server
+
+#### Model : Listing
+
+we write here what we want for the project
+
+1. title
+2. description
+3. image
+4. price
+5. location
+6. country
