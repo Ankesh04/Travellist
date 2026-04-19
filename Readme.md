@@ -5,6 +5,10 @@
 
 2. REST APIs for CRUD
 
+3. Model creation
+
+4. Initialsing database
+
 ## Commands in the terminal
 
 1. npm init -y
@@ -25,11 +29,17 @@ to start the express server
 
 #### Model : Listing
 
-we write here what we want for the project
+we write here what we want for the project model
 
-1. title
-2. description
-3. image
-4. price
-5. location
-6. country
+1. title -> string
+2. description -> string
+3. image -> "url"
+4. price -> number
+5. location -> string
+6. country -> string
+
+so for creting a model we have to know that we are going to create multiple models so now we will create a model folder
+
+#### Initialising Database
+
+Here we will create a init folder 
