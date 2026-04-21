@@ -9,6 +9,8 @@
 
 4. Initialsing database
 
+5. Index Route
+
 ## Commands in the terminal
 
 1. npm init -y
@@ -42,4 +44,10 @@ so for creting a model we have to know that we are going to create multiple mode
 
 #### Initialising Database
 
-Here we will create a init folder 
+Here we will create a init folder and in that init folder we will store our sample data
+
+##### Index Route
+
+we will use get request access to listings and we will return all the listings
+to get all the listings we will create a new views folder for storing all type of models
+here we performed create crud operations

@@ -24,17 +24,31 @@ async function main() {
 // connecting to ejs
 app.set("view Engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
+app.use(express.urlencoded({extended: true}));
 
 // creating api for our backend
 app.get("/", (req, res) => {
     res.send("Hi, my friend api is working.");
 });
 
+
 // new index route
 app.get("/listings", async (req, res) => {
     const allListings = await Listing.find({});
-    res.render("listings/index.ejs", {allListings})
+    res.render("listings/index.ejs", {allListings});
 });
+
+// New route- to add new listings
+app.get("/listings/new", (req, res) =>{
+    res.render("listings/new.ejs");
+});
+
+// show route-show all data
+app.get("/listings/:id", async (req, res) => {
+    let {id} = req.params;
+    const showAllListing = await Listing.findById(id);
+    res.render("listings/show.ejs", {showAllListing});
+})
 
 // creating new route
 // app.get("/testListing", async (req, res) => {
