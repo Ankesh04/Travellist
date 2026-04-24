@@ -46,8 +46,20 @@ so for creting a model we have to know that we are going to create multiple mode
 
 Here we will create a init folder and in that init folder we will store our sample data
 
-##### Index Route
+##### Route
 
+1. Index route
 we will use get request access to listings and we will return all the listings
 to get all the listings we will create a new views folder for storing all type of models
-here we performed create crud operations
+get  /listing
+
+2. Show Route
+here we perform read crud operation where it will show all the data of the title
+get  /listing/:id
+
+3. Create route
+a. new route - we will get a form to create a new lsiting and when the submit button will be clicked then it will go to the cerate route
+get /listing/new
+
+b. create route - s
+post /listing
