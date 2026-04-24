@@ -23,6 +23,8 @@ to add the Embedded JavaScript templating engine as a dependency in your Node.js
 for dealing with databases
 5. touch app.js
 for creating the main js file
+6. npm install method-override
+to make changes or verwrite the old data
 
 ### Extra commands to start
 
@@ -60,6 +62,13 @@ get  /listing/:id
 3. Create route
 a. new route - we will get a form to create a new lsiting and when the submit button will be clicked then it will go to the cerate route
 get /listing/new
-
 b. create route - s
 post /listing
+here he data of the user input will be saved
+
+4. Update Route
+a. edit route - get request will come in the edit route and to edit we have render a form and when submit button is clicked then it will go to put request to update route
+get  /lsiting/:id/edit
+b. update route - it will update the lsitings
+put  /lsiting/:id
+npm install method-override
