@@ -25,6 +25,8 @@ for dealing with databases
 for creating the main js file
 6. npm install method-override
 to make changes or verwrite the old data
+7. npm i ejs-mate
+it is use to make templates/layouts
 
 ### Extra commands to start
 
@@ -72,3 +74,9 @@ get  /lsiting/:id/edit
 b. update route - it will update the lsitings
 put  /lsiting/:id
 npm install method-override
+
+5. Delete Route
+delete request will come in the id route and that id will be deleted
+DELETE  /listing/:id
+
+    qgfq3

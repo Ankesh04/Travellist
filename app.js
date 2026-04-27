@@ -5,6 +5,7 @@ const Listing = require("./models/listing.js");
 const path = require("path"); // ejs setup
 const MONGO_URL = "mongodb://127.0.0.1:27017/travellist"; // creatings database
 const methodOverride = require("method-override"); //for updating
+const ejsMate = require("ejs-mate");
 
 main()
   .then(() => {
@@ -24,6 +25,7 @@ app.set("view Engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
+app.engine('ejs', ejsMate);
 
 // creating api for our backend
 app.get("/", (req, res) => {
