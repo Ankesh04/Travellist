@@ -1,0 +1,19 @@
+/* body{
+    background-color: pink;
+} */
+
+
+ /* Navbar  */
+.navbar {
+    height: 5rem;
+    background-color: #ffff;
+}
+
+.fa, .fa-brands, .fa-classic, .fa-regular, .fa-solid, .fab, .far, .fas{
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #222222 !important; /*if we want to overwrite bootstartp styling */
+}

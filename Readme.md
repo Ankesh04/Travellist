@@ -79,4 +79,7 @@ npm install method-override
 delete request will come in the id route and that id will be deleted
 DELETE  /listing/:id
 
-    qgfq3
+###### Layouts
+
+1. Boilerplate
+layouts are items that are going to be used again anad again in your website and the first thing is the boiler plate means the items that are going to be viewed every page of your website like navbar, footer, etc.
