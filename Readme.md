@@ -83,3 +83,4 @@ DELETE  /listing/:id
 
 1. Boilerplate
 layouts are items that are going to be used again anad again in your website and the first thing is the boiler plate means the items that are going to be viewed every page of your website like navbar, footer, etc.
+Also in this except the body tag all the other tags were removed from the ejs files
